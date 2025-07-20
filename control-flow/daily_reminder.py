@@ -1,22 +1,22 @@
-task = input("Enter your task: ").strip()
-priority = input("Priority (high, medium, low): ").strip().lower()
-time_bound = input("Is it time-bound? (yes or no): ").strip().lower()
+Task = input("Enter your task: ").strip()
+Priority = input("Priority (high, medium, low): ").strip().lower()
+Time_bound = input("Is it time-bound? (yes or no): ").strip().lower()
 
-match priority:
+match Priority:
     case "high":
-        if time_bound == "yes":
-            print(f"Reminder: {task} is a {priority} priority task that requires immediate attention today!")
+        if Time_bound == "yes":
+            print(f"Reminder: {Task} is a {Priority} priority task that requires immediate attention today!")
         else:
-            print(f"Note: {task} is a {priority} priority task. Consider completing it when you have free time.")
+            print(f"Note: {Task} is a {Priority} priority task. Consider completing it when you have free time.")
     case "medium":
-        if time_bound == "yes":
-            print(f"Reminder: {task} is a {priority} priority task that requires immediate attention today!")
+        if Time_bound == "yes":
+            print(f"Reminder: {Task} is a {Priority} priority task that requires immediate attention today!")
         else:
-            print(f"Note: {task} is a {priority} priority task. Consider completing it when you have free time.")
+            print(f"Note: {Task} is a {Priority} priority task. Consider completing it when you have free time.")
     case "low":
-        if time_bound == "yes":
-            print(f"Reminder: {task} is a {priority} priority task that requires immediate attention today!")
+        if Time_bound == "yes":
+            print(f"Reminder: {Task} is a {Priority} priority task that requires immediate attention today!")
         else:
-            print(f"Note: {task} is a {priority} priority task. Consider completing it when you have free time.")
+            print(f"Note: {Task} is a {Priority} priority task. Consider completing it when you have free time.")
     case _:
         print("Invalid priority input. Please enter high, medium, or low.")
