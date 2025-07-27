@@ -12,6 +12,7 @@ try:
 except ValueError:
     print("Invalid temperature. Please enter a numeric value.")
     exit()
+temp_kind = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().lower()
 
 match temp_kind:
     case "f":
